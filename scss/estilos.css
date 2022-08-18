@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr: #F2F2F2;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--clr);
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+}
+.navbar ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 350px;
+  padding-left: 9px;
+}
+.navbar ul li {
+  position: relative;
+  left: 2.5rem;
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+.navbar ul li:hover a .text {
+  color: rgb(242, 242, 242);
+  transform: translateY(10px);
+  -webkit-text-decoration: 2px overline black;
+          text-decoration: 2px overline black;
+}
+.navbar ul li:hover a .icon {
+  transform: translateY(-15px);
+}
+.navbar ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+.navbar ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 500ms;
+  color: var(--clr);
+}
+.navbar ul li a .icon .contadorCarrito {
+  background-color: rgba(255, 0, 0, 0);
+  border: rgba(242, 241, 240, 0) solid 1px;
+  border-radius: 50px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.navbar ul li a .icon .contadorCarrito p {
+  font-size: 15px;
+  position: absolute;
+  top: -29.5px;
+  left: 2px;
+}
+.navbar ul li a .text {
+  position: absolute;
+  color: rgba(242, 242, 242, 0);
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: all 0.5s;
+}
+.navbar ul li a .text ::after {
+  display: none;
+}
+
+.main {
+  color: #0D0D0D;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 100;
+  box-shadow: 0px 17px 52px 3px #F2F1F0;
+  margin-bottom: 20px;
+}
+.header .icono {
+  display: flex;
+  align-items: center;
+}
+.header h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--clr);
+}
+
+.relleno {
+  height: 80px;
+}
+
+.tapa {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.bgIndex {
+  background-image: url(../assets/img/celus.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 2000px;
+  height: 20rem;
+}
+
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainIndex #titulo {
+  margin-top: 2rem;
+}
+.mainIndex .contenidoIndex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mainIndex .contenidoIndex .descripcion {
+  text-align: center;
+}
+.mainIndex .imagenesIndex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.mainIndex .boton {
+  margin-top: 10px;
+  background-color: #0D0D0D;
+  color: #F2F1F0;
+  padding: 10px;
+  border: solid 0px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+@media all and (min-width: 700px) {
+  .mainIndex .contenidoIndex .descripcion {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.relleno {
+  height: 100px;
+}
+
+.tapa {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.bgFooter {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2373513d' fill-opacity='1' d='M0 192L120 176C240 160 480 128 720 133.3C960 139 1200 181 1320 202.7L1440 224L1440 0L1320 0C1200 0 960 0 720 0C480 0 240 0 120 0L0 0Z'%3E%3C/path%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainCel .tituloCel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+}
+.mainCel .tituloCel h2 {
+  color: #0D0D0D;
+  font-size: 40px;
+}
+
+@media all and (min-width: 700px) {
+  .tituloCel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.contCel {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.constCel.open {
+  transform: translateY(0%);
+}
+
+.cardCel {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.cardCel .card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardCel .card .imgCel {
+  height: 35vh;
+}
+.cardCel .card h3 {
+  margin-top: 5px;
+  margin-bottom: -3px;
+}
+.cardCel .card .product-price {
+  margin-bottom: 4px;
+}
+.cardCel .card button {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  border: solid 2px black;
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
+}
+
+#bodyCel {
+  padding-bottom: 15px;
+}
+#bodyCel .rellenoCel {
+  height: 7rem;
+}
+
+#bodyCarrito .rellenoCarrito {
+  margin-bottom: 10rem;
+}
+
+.mainCarrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mainCarrito .tituloCarrito {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainCarrito .tituloCarrito div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 40px;
+  margin-top: 20px;
+}
+.mainCarrito .tituloCarrito .precioTotal {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.mainCarrito .carrito {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 4;
+  grid-template-columns: repeat(auto-fill, 1fr);
+}
+.mainCarrito .carrito .divCarrito {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainCarrito .carrito .divCarrito img {
+  width: 100px;
+  margin-left: -5px;
+}
+.mainCarrito .carrito .divCarrito #nombre {
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mainCarrito .carrito .divCarrito .remove-btn {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: solid 0px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 0.7rem;
+}
+.mainCarrito .pagar {
+  padding: 5px 8px 5px 8px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: solid 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.mainCarrito .pokemonRegalo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainCarrito .contenedorPokemon div .card .card-body .card-text {
+  font-weight: bold;
+}
+
+@media all and (min-width: 700px) {
+  .carrito {
+    width: 90%;
+  }
+  .carrito #divCarrito img {
+    width: 150px;
+    margin-left: -5px;
+  }
+}
+.mainContacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContacto h2 {
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+.mainContacto .contenedorContactos {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.mainContacto .contenedorContactos .telefonos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainContacto .contenedorContactos .correo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media all and (max-width: 700px) {
+  .mainContacto .contenedorContactos {
+    flex-direction: column;
+  }
+}
+.mainContacto h4 {
+  margin-top: 5rem;
+}
+.mainContacto .contenedorRedes {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.mainContacto .contenedorRedes .aRedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.mainContacto .ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContacto .ubicacion h4 {
+  text-align: center;
+}
+.mainContacto .ubicacion .mapa {
+  margin-top: 2rem;
+  border: solid 0px;
+  border-radius: 5px;
+}
+@media all and (max-width: 700px) {
+  .mainContacto .ubicacion .mapa {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.rellenoContacto {
+  height: 150px;
+}/*# sourceMappingURL=estilos.css.map */

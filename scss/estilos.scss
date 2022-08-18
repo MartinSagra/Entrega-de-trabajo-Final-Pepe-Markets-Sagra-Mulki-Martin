@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --clr: #F2F2F2;
+}
+body{
+    min-height: 100vh;
+    background: var(--clr);
+}
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 350px;
+        padding-left: 9px;
+        li{
+            position: relative;
+            left: 2.5rem;
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            &:hover a .text{
+                color: rgba(242, 242, 242, 1);
+                transform: translateY(10px);
+                text-decoration: 2px overline black;
+            }
+            &:hover a .icon{
+                transform: translateY(-15px);
+            }
+            a{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                font-weight: 500;
+                .icon{
+                    position: relative;
+                    display: block;
+                    line-height: 75px;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    transition: all 500ms;
+                    color: var(--clr);
+                    .contadorCarrito{
+                        background-color: rgba(255, 0, 0, 0);
+                        border: #f2f1f000 solid 1px;
+                        border-radius: 50px;
+                        width: 17px;
+                        height: 17px;
+                        position: absolute;
+                        top: 10px;
+                        left: 15px;
+                        p{
+                            font-size: 15px;
+                            position: absolute;
+                            top: -29.5px;
+                            left: 2px;
+                        }
+                    }
+                }
+                .text{
+                    position: absolute;
+                    color: rgba(242, 242, 242, 0.0);
+                    font-weight: 400;
+                    font-size: 0.75em;
+                    letter-spacing: 0.05em;
+                    transition: all 0.5s;
+                    ::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.main{
+    color: #0D0D0D;
+}
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 100;
+    box-shadow: 0px 17px 52px 3px #F2F1F0;
+    margin-bottom: 20px;
+    .icono{
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--clr);
+    }
+}
+.relleno {
+    height: 80px;
+}
+.tapa {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-radius: 10px;
+}
+//------------------------------------------- Index
+.bgIndex{
+
+    background-image: url(../assets/img/celus.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 2000px;
+    height: 20rem;
+    
+}
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #titulo{
+        margin-top: 2rem;
+    }
+    .contenidoIndex{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        .descripcion{
+            text-align: center;
+        }
+    }
+    .imagenesIndex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .boton{
+        margin-top: 10px;
+        background-color: #0D0D0D;
+        color: #F2F1F0;
+        padding: 10px;
+        border: solid 0px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+}
+
+@media all and (min-width: 700px){
+    .mainIndex{
+        .contenidoIndex{
+            .descripcion{
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+        } 
+    }
+    
+}
+
+.bgFooter{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2373513d' fill-opacity='1' d='M0 192L120 176C240 160 480 128 720 133.3C960 139 1200 181 1320 202.7L1440 224L1440 0L1320 0C1200 0 960 0 720 0C480 0 240 0 120 0L0 0Z'%3E%3C/path%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+//------------------------------------------
+//Productos
+.mainCel{
+    .tituloCel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 5rem;
+        button{
+            margin-bottom: 10px;
+            margin-top: 10px;
+            background-color: #f2f2f200;
+            border: none;
+            cursor: pointer;
+            h2{
+                color: #0D0D0D;
+                font-size: 40px;
+            }
+        }
+        #filtro{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-right: 5px;
+            margin-bottom: 5px;
+            input{
+                display: flex;
+                margin-right: 5px;
+            }
+            .labelCelu{
+                margin-right: 10px;
+            }
+        }
+        @media all and (min-width: 700px){
+            .tituloCel{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                #filtro{
+                    flex-direction: row;
+                    input{
+                        display: flex;
+                        margin-right: 5px;
+                    }
+                    .labelCelu{
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .contCel{
+     display: flex;
+	flex-wrap: wrap;
+    }
+    .contCel.open {
+        transform: translateY(0%);
+    }
+    .cardCel{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .imgCel{
+                height: 40vh;
+            }
+            h3{
+                margin-top: 5px;
+                margin-bottom: -3px;
+            }
+            .product-price{
+                margin-bottom: 4px;
+            }
+            button{
+                background-color: black;
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+                border: solid 2px #261514;
+                cursor: pointer;
+                position: relative;
+                bottom: 5px;
+            }
+        }
+    }
+}
+#bodyCel{
+    padding-bottom: 15px;
+    .rellenoCel{
+        height: 7rem;
+    }
+}
+//Carrito
+#bodyCarrito{
+    .rellenoCarrito{
+        margin-bottom: 10rem;
+    }
+}
+.mainCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .tituloCarrito{
+        display: flex;
+        margin-top: 5px;
+        align-items: center;
+        justify-content: space-between;
+        div{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 40px;
+            margin-top: 20px;
+        }
+        .precioTotal{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+    .carrito{
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 4;
+        grid-template-columns: repeat(auto-fill,1fr);
+        .divCarrito{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            img{
+                width: 100px;
+                margin-left: -5px;
+            }
+            #nombre{
+                font-weight: bold;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+             // #precio{
+
+            // }
+            .remove-btn{
+                padding: 5px;
+                background-color: black;
+                color: white;
+                outline: none;
+                border: solid 0px;
+                border-radius: 50px;
+                cursor: pointer;
+                font-weight: bolder;
+                font-size: .7rem;
+            }
+        }
+    }
+    .pagar{
+        padding: 5px 8px 5px 8px;
+        background-color: black;
+        color: white;
+        outline: none;
+        border: solid 0px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    .pokemonRegalo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorPokemon{
+        div{
+            .card{
+                .card-body{
+                    .card-text{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (min-width:700px){
+    .carrito{
+        width: 90%;
+        #divCarrito{
+            img{
+                width: 150px;
+                margin-left: -5px;
+            }
+        }
+    }
+}
+// Main Contacto
+.mainContacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        margin-top: 2rem;
+        text-decoration: underline;
+    }
+    .contenedorContactos{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5rem;
+        .telefonos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .correo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    @media all and (max-width: 700px){
+        .contenedorContactos{
+            flex-direction: column;
+        }
+    }
+    h4{
+        margin-top:5rem;
+    }
+    .contenedorRedes{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .aRedes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4{
+            text-align: center;
+        }
+        .mapa{
+            margin-top: 2rem;
+            border: solid 0px;
+            border-radius: 5px;
+        }
+        @media all and (max-width: 700px){
+            .mapa{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+.rellenoContacto{
+    height: 150px;
+}
