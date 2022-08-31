@@ -1,0 +1,133 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Iphone SE2",
+          "price": 40000,
+          "image": { "fields": { "file": { "url": "../assets/img/celulares/iphonese2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Iphone 11",
+          "price": 45000,
+          "image": { "fields": { "file": { "url": "../assets/img/celulares/iphone11.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Iphone 12 Mini",
+          "price": 50000,
+          "image": { "fields": { "file": { "url": "../assets/img/celulares/iphone12mini.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Iphone 12",
+          "price": 55000,
+          "image": { "fields": { "file": { "url": "../assets/img/celulares/iphone12.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Iphone 13 Mini",
+          "price": 60000,
+          "image": { "fields": { "file": { "url": "../assets/img/celulares/iphone13mini.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Iphone 13",
+          "price": 65000,
+          "image": { "fields": { "file": { "url": "../assets/img/celulares/iphone13.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Iphone 13 Pro",
+          "price": 70000,
+          "image": { "fields": { "file": { "url": "../assets/img/celulares/iphone13pro.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Iphone 13 ProMax",
+          "price": 80000,
+          "image": { "fields": { "file": { "url": "../assets/img/celulares/iphone13promax.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "Apple Watch 3 38mm",
+          "price": 20000,
+          "image": { "fields": { "file": { "url": "../assets/img/relojes/watch3-38mm.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "Apple Watch 3 42mm",
+          "price": 25000,
+          "image": { "fields": { "file": { "url": "../assets/img/relojes/watch3-42mm.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "11" },
+        "fields": {
+          "title": "Apple Watch 6 40mm",
+          "price": 30000,
+          "image": { "fields": { "file": { "url": "../assets/img/relojes/watch6-40mm.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "12" },
+        "fields": {
+          "title": "Apple Watch 6 44mm",
+          "price": 35000,
+          "image": { "fields": { "file": { "url": "../assets/img/relojes/watch6-44mm.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "13" },
+        "fields": {
+          "title": "Apple Watch SE 40mm",
+          "price": 40000,
+          "image": { "fields": { "file": { "url": "../assets/img/relojes/watchSE-40mm.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "14" },
+        "fields": {
+          "title": "Apple Watch SE 44mm",
+          "price": 45000,
+          "image": { "fields": { "file": { "url": "../assets/img/relojes/watchSE-44mm.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "15" },
+        "fields": {
+          "title": "Apple Watch 7 41mm",
+          "price": 50000,
+          "image": { "fields": { "file": { "url": "../assets/img/relojes/watch7-41mm.jpg" } } }
+        }
+      },    
+      {
+        "sys": { "id": "16" },
+        "fields": {
+          "title": "Apple Watch 7 45mm",
+          "price": 55000,
+          "image": { "fields": { "file": { "url": "../assets/img/relojes/watch7-45mm.jpg" } } }
+        }
+      }
+    ]
+  }
+  
