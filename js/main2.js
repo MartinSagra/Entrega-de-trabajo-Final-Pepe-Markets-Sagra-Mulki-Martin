@@ -75,7 +75,7 @@ getCartButton(){
         }
         button.addEventListener("click", (event)=>{
             event.target.innerHTML = "En el carrito";
-            event.target.disabled = true;
+            button.disabled = true;
             //Productos iguales
             let cartItem = {...Storage.getProduct(id), amount:1};
             //Agregando y guardando en el carro
